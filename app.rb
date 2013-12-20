@@ -17,7 +17,7 @@ module Clock
     desc 'return the current time in UTC'
 
     get 'time' do
-      Time.now.utc.to_s
+      {time: Time.now.utc.to_s}
     end
 
   end
